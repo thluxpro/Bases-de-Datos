@@ -58,3 +58,4 @@ FOREIGN KEY (codigo) references departamento
 	--from trabajapara;
 --Select	
 --CAST ((avg(sueldo)) as float) from empleado;
+--Prueba gitkraken
