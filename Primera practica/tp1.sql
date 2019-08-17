@@ -88,4 +88,15 @@ FOREIGN KEY (codigo) references departamento
 --order by (nombre,apellido) desc;
 
 --insert into empleado (dni,nombre,apellido,genero,sueldo) values (13334401,'RETAMAR','JOA' ,'F',35000)
-
+--select e.nombre, e.apellido, e. sueldo,e.hora-select e.nombre, e.apellido, e. sueldo,e.horas
+--from empleado e, departamento d group by d.nombre;
+-- delete from trabajapara
+ --where dni = 29332501 and codigo = 1;
+ --select e.apellido,e.nombre from empleado e,departamento d
+ --group by d.codigo;
+ --select avg(sueldo),genero from empleado group by genero
+-- select avg(sueldo),genero from empleado group by genero having sueldo>10000-- no funca
+--select count(dni),genero from empleado group by (genero) having (genero='F')-- having solo funcione si el group by es el mismo atributo
+ 
+ 
+ 
