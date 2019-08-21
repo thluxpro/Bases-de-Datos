@@ -1,3 +1,4 @@
+
 /*CREATE TABLE empleado(
 dni int,
 nombre varchar(40),
@@ -45,15 +46,20 @@ FOREIGN KEY (codigo) references departamento
 --insert into trabajapara (dni,codigo,horas) values (29332501,1,10)
 --UPDATE empleado set genero = 'M'
 --where dni = 13334401;
+--Consultas
+--a)Listar todos los empleados
 --SELECT * from empleado;
+
+--b)Listar los empleados de género masculino
 --SELECT * from empleado
 	--where genero = 'M';
-
+--c) Listar el mayor sueldo, el menor sueldo, el sueldo promedio de los empleados.
 --Select max(sueldo), min (sueldo),avg(sueldo) from empleado;
 
+--D) Listar la cantidad de empleados cuyo sueldo supera 20000
 --Select * from empleado
 	--where sueldo>2000;
-
+--E) Listar el promedio de sueldos del departamento ‘COMPUTOS’
 --select avg(sueldo)
 	--from trabajapara;
 --Select	
@@ -63,12 +69,13 @@ FOREIGN KEY (codigo) references departamento
 --select distinct e.nombre, e.apellido, t.dni, t.codigo
 --from trabajapara t, empleado e -- reconocer la tabla de otra manera
 --where t.dni = e.dni; -- juntar 2 tablas 
---punto f
+
+--punto f Listar cantidad de horas que se trabaja en el departamento ‘PRODUCCION’
 --select avg(sueldo) 
 --from empleado e, departamento d, trabajapara t 
 --where t.dni = e.dni and d.codigo = t.codigo and d.nombre = 'computo';  
 
---punto g
+--g)Listar los nombres de los empleados que trabajan al menos 6 horas para el departamento ‘DEPOSITO’
 --select sum(horas)
 --from trabajapara t, departamento d
 --where d.nombre ='produccion' and t.codigo = d.codigo; 
